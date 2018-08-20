@@ -39,7 +39,10 @@ class ViewController: UIViewController {
   }
   
   private func configureView() {
-    self.ibSendCutiesButton.setTitle("Send me cuties please !!!", for: .normal)
+    self.ibSendCutiesButton.setTitle("Send me cuties notifications please !!!", for: .normal)
+    self.ibSendCutiesButton.layer.cornerRadius = 10
+    self.ibSendCutiesButton.backgroundColor = .blue
+    self.ibSendCutiesButton.setTitleColor(.white, for: .normal)
   }
   
   private func sendCutiesNotifications() {
@@ -55,7 +58,7 @@ class ViewController: UIViewController {
         else {
           content.threadIdentifier = "cute-animals-groupnotif"
           content.summaryArgumentCount = 1
-          content.summaryArgument = "Cute Animals Factory"
+          content.summaryArgument = "Cute Animals Notifications"
         }
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(10*i), repeats: false)
         let request = UNNotificationRequest(identifier: "NotificationID\(i)", content: content, trigger: trigger)

@@ -17,9 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-V8-2j3">
+                                <rect key="frame" x="139" y="280" width="97" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or6-oA-0LB">
-                                <rect key="frame" x="100" y="318.5" width="175" height="30"/>
-                                <state key="normal" title="Envoyer les notifications !"/>
+                                <rect key="frame" x="22.5" y="220" width="330" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SJa-EX-pHD"/>
+                                    <constraint firstAttribute="width" constant="330" id="vHM-BO-3rI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Send me cuties notifications please !!!"/>
                                 <connections>
                                     <action selector="sendCutiesTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Poj-Qq-ls3"/>
                                 </connections>
@@ -27,8 +38,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="or6-oA-0LB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4WK-0D-hhq"/>
-                            <constraint firstItem="or6-oA-0LB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SBd-L1-vZh"/>
+                            <constraint firstItem="or6-oA-0LB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2DT-oi-F2d"/>
+                            <constraint firstItem="CAH-V8-2j3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fk-48-NYW"/>
+                            <constraint firstItem="CAH-V8-2j3" firstAttribute="top" secondItem="or6-oA-0LB" secondAttribute="bottom" constant="10" id="I6A-KC-OSN"/>
+                            <constraint firstItem="CAH-V8-2j3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JUk-w8-vPx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>
