@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  GroupedNotif
+//  CuteAnimalsNotifications
 //
 //  Copyright © 2018 Wiwi. All rights reserved.
 //

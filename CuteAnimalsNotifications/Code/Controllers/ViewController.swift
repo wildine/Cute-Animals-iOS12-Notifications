@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  GroupedNotif
+//  CuteAnimalsNotifications
 //
 //  Copyright © 2018 Wiwi. All rights reserved.
 //
@@ -28,16 +28,16 @@ class ViewController: UIViewController {
   private func sendNotifications() {
     for i in 1...5 {
       let content = UNMutableNotificationContent()
-      content.categoryIdentifier = "EmojiNotification"
-      content.title = "Notification \(i)"
+      content.categoryIdentifier = "CuteAnimalsNotification"
+      content.title = "Cutie n° \(i)"
       content.body = "\(Date())"
       if i == 2 {
-        content.threadIdentifier = "cute-animals-groupnotif"
+        content.threadIdentifier = "cute-animals"
       }
       else {
-        content.threadIdentifier = "cute-animals"
+        content.threadIdentifier = "cute-animals-groupnotif"
         content.summaryArgumentCount = 1
-        content.summaryArgument = "cute animals factory"
+        content.summaryArgument = "Cute Animals Factory"
       }
       let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(10*i), repeats: false)
       let request = UNNotificationRequest(identifier: "NotificationID\(i)", content: content, trigger: trigger)
